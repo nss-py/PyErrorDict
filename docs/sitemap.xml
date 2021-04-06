@@ -6,6 +6,11 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://nss-py.github.io/PyErrorDict/ValueError.html</loc>
+    <priority>0.8</priority>
+  </url>
+
 
 
 </urlset>

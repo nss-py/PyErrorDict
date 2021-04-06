@@ -11,6 +11,7 @@ webassets = "*"
 beautifulsoup4 = "*"
 mdx-linkify = "*"
 closure = "*"
+pysimplegui = "*"
 
 [dev-packages]
 
