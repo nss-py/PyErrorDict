@@ -8,6 +8,9 @@ pelican = "*"
 markdown = "*"
 ghp-import = "*"
 webassets = "*"
+beautifulsoup4 = "*"
+mdx-linkify = "*"
+closure = "*"
 
 [dev-packages]
 

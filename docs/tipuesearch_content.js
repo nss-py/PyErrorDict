@@ -1,0 +1,1 @@
+var tipuesearch = {"pages":[{"title":"このサイトについて","text":"このサイトについて Pythonのエラーが出たけどいまいちわからない！といった初学者向けの、エラーコード別対処法をまとめていきます。どうぞよしなに。","tags":"others","url":"/Home.html","loc":"/Home.html"}]};
