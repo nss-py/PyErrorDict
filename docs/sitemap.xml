@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://nss-py.github.io/PyErrorDict/Home.html</loc>
+    <loc>/ImportError.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://nss-py.github.io/PyErrorDict/ValueError.html</loc>
+    <loc>/ValueError.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>/Home.html</loc>
     <priority>0.8</priority>
   </url>
 
