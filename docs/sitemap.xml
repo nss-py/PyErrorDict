@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>/ModuleNotFoundError.html</loc>
+    <loc>https://nss-py.github.io/PyErrorDict/ModuleNotFoundError.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>/NameError.html</loc>
+    <loc>https://nss-py.github.io/PyErrorDict/NameError.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>/SyntaxError.html</loc>
+    <loc>https://nss-py.github.io/PyErrorDict/SyntaxError.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>/TypeError.html</loc>
+    <loc>https://nss-py.github.io/PyErrorDict/TypeError.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>/Home.html</loc>
+    <loc>https://nss-py.github.io/PyErrorDict/Home.html</loc>
     <priority>0.8</priority>
   </url>
 
