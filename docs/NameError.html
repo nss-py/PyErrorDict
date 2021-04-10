@@ -64,10 +64,12 @@
 <p>NameErrorは文字通りオブジェクトの名前に関するエラーです。未定義の変数や関数をしようとしたときに発生します。</p>
 <h2 id="nameerror-name-x-is-not-defined">NameError: name 'x' is not defined</h2>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">================================</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;x&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print<span class="o">(</span>x<span class="o">)</span>
-NameError: name <span class="s1">&#39;x&#39;</span> is not defined
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 <p>単に未定義であった場合は原因がわかりやすいですが、既存の変数・関数のスペルミス、大文字小文字のミスでも同様に未定義として扱われる点は注意が必要です。</p>
@@ -108,9 +110,9 @@ NameError: name <span class="s1">&#39;result&#39;</span> is not defined
             <div class="dropdown-divider"></div>
 
             <a class="dropdown-item" href="./SyntaxError.html">SyntaxError(1)</a>
-            <a class="dropdown-item" href="./ModuleNotFoundError.html">ModuleNotFoundError(1)</a>
             <a class="dropdown-item" href="./NameError.html">NameError(1)</a>
             <a class="dropdown-item" href="./TypeError.html">TypeError(1)</a>
+            <a class="dropdown-item" href="./ModuleNotFoundError.html">ModuleNotFoundError(1)</a>
           </div>
         </div>
 
