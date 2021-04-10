@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Archive — PyErrorDict</title>
-  <meta name="description" content="The archives page, find old stuff organized by date.">
+  <title>ModuleNotFoundError — PyErrorDict</title>
+  <meta name="description" content="Title: ModuleNotFoundError; Date: 2021-04-10; Author: nss">
   <meta name="author" content="nss">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript">
@@ -41,35 +41,46 @@
 
     <div class="row ">
       <div class="col-sm-9">
+<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="text-center article-header">
+    <h1 itemprop="name headline" class="article-title">ModuleNotFoundError</h1>
+  </div>
+  <div class="text-left">
+    <time datetime="2021-04-10T00:00:00+09:00" itemprop="datePublished">Build:2021-04-10</time>
+    /
+    <time datetime="2021-04-10T00:00:00+09:00" itemprop="dateModified">Modify:2021-04-10</time>
+  </div>
+  <div align="right">
+    Tags:
+    <span itemprop="keywords">
+      <a class="d-inline p-1 bg-secondary text-white rounded-pill border border-black"
+        href="/tag/modulenotfounderror.html" rel="tag">
+        ModuleNotFoundError</a>
+    </span>
+  </div>
+  <div itemprop="articleBody" class="article-body">
+    <span>
+      <h1 id="modulenotfounderror">ModuleNotFoundError</h1>
+<p>存在しないモジュールをimportしようとすると発生します。</p>
+<div class="highlight"><pre><span></span><code>&gt;pip list
+Package    Version
+---------- -------
+pip        <span class="m">21</span>.0.1
+setuptools <span class="m">54</span>.1.2
+wheel      <span class="m">0</span>.36.2
+</code></pre></div>
 
-<h1>Archives</h1>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span>
+<span class="o">================================</span>
+<span class="ne">ModuleNotFoundError</span><span class="p">:</span> <span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="s1">&#39;numpy&#39;</span>
+</code></pre></div>
 
-<table class="table">
-    <tbody>
-        <tr>
-        <td>10 4 2021</td>
-        <td><a href='/ModuleNotFoundError.html'>ModuleNotFoundError</a></td>
-        </tr>
-        <tr>
-        <td>10 4 2021</td>
-        <td><a href='/NameError.html'>NameError</a></td>
-        </tr>
-        <tr>
-        <td>10 4 2021</td>
-        <td><a href='/SyntaxError.html'>SyntaxError</a></td>
-        </tr>
-        <tr>
-        <td>10 4 2021</td>
-        <td><a href='/TypeError.html'>TypeError</a></td>
-        </tr>
-        <tr>
-        <td>01 1 2000</td>
-        <td><a href='/Home.html'>このサイトについて</a></td>
-        </tr>
-    </tbody>
-</table>
-
-
+<p>上の例ではnumpyが存在しない環境でnumpyをimportしようとしています。<code>pip install numpy</code>などでインストールしましょう。</p>
+<p>インストールしているはずなのにこのエラーが出てくる場合は、pythonやモジュールのパスの確認、モジュールの再インストール、環境変数の確認などをしましょう。</p>
+<p>モジュールの再インストールがうまくいかない場合は、pipのキャッシュが原因の可能性もあるため<code>pip uninstall hogehoge</code>の後に<code>pip --no-chache-dir install hogehoge</code>でうまくいくかもしれません。</p>
+    </span>
+  </div>
+</div>
       </div>
       <div class="col-sm-3">
         <h4>

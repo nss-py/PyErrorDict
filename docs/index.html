@@ -26,57 +26,94 @@
   <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
   <link href="/theme/css/local.css" rel="stylesheet">
   <link href="/theme/css/pygments.css" rel="stylesheet">
+ 
 </head>
 
 <body>
   <div class="container">
-    <div class="page-header border-3">
-      <div class="row justify-content-start">
-        <div class="col-sm-8">
-          <h1><a href="/">PyErrorDict</a>
-            <small>Pythonのエラー集だよ</small>
-          </h1>
-        </div>
-      </div>
+    <div class="header border-2">
+        <h1>
+          <a href="/">PyErrorDict</a>
+          <small>鋭意追加中</small>
+        </h1>
+        <hr>
     </div>
 
     <div class="row ">
       <div class="col-sm-9">
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
   <div>
-    <a href="/ImportError.html">
-      <h2 itemprop="name headline">ImportError
+    <a href="/ModuleNotFoundError.html">
+      <h2 itemprop="name headline">ModuleNotFoundError
     </a><small><small>
-        <time datetime="2021-04-08T00:00:00+09:00" itemprop="datePublished">2021-04-08</time>
+        <time datetime="2021-04-10T00:00:00+09:00" itemprop="datePublished">2021-04-10</time>
       </small></small></h2>
   </div>
-  <div class="summary"><p>ImportError</p></div>
+  <div class="summary"><p>ModuleNotFoundErrorについての原因と対処法</p></div>
   Category:
   <span itemprop="articleSection">
     <a href="/category/python.html" rel="category">Python</a>
   </span>
   Tags:
   <span itemprop="keywords">
-    <a href="/tag/importerror.html" rel="tag">ImportError</a>
+    <a href="/tag/modulenotfounderror.html" rel="tag">ModuleNotFoundError</a>
   </span>
 </div>
 <hr>
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
   <div>
-    <a href="/ValueError.html">
-      <h2 itemprop="name headline">ValueError
+    <a href="/NameError.html">
+      <h2 itemprop="name headline">NameError
     </a><small><small>
-        <time datetime="2021-04-06T00:00:00+09:00" itemprop="datePublished">2021-04-06</time>
+        <time datetime="2021-04-10T00:00:00+09:00" itemprop="datePublished">2021-04-10</time>
       </small></small></h2>
   </div>
-  <div class="summary"><p>ValueError</p></div>
+  <div class="summary"><p>NameErrorについての原因と対処法</p></div>
   Category:
   <span itemprop="articleSection">
     <a href="/category/python.html" rel="category">Python</a>
   </span>
   Tags:
   <span itemprop="keywords">
-    <a href="/tag/valueerror.html" rel="tag">ValueError</a>
+    <a href="/tag/nameerror.html" rel="tag">NameError</a>
+  </span>
+</div>
+<hr>
+<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
+  <div>
+    <a href="/SyntaxError.html">
+      <h2 itemprop="name headline">SyntaxError
+    </a><small><small>
+        <time datetime="2021-04-10T00:00:00+09:00" itemprop="datePublished">2021-04-10</time>
+      </small></small></h2>
+  </div>
+  <div class="summary"><p>SyntaxError（構文エラー）についての原因と対処法</p></div>
+  Category:
+  <span itemprop="articleSection">
+    <a href="/category/python.html" rel="category">Python</a>
+  </span>
+  Tags:
+  <span itemprop="keywords">
+    <a href="/tag/syntaxerror.html" rel="tag">SyntaxError</a>
+  </span>
+</div>
+<hr>
+<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
+  <div>
+    <a href="/TypeError.html">
+      <h2 itemprop="name headline">TypeError
+    </a><small><small>
+        <time datetime="2021-04-10T00:00:00+09:00" itemprop="datePublished">2021-04-10</time>
+      </small></small></h2>
+  </div>
+  <div class="summary"><p>TypeErrorについての原因と対処法</p></div>
+  Category:
+  <span itemprop="articleSection">
+    <a href="/category/python.html" rel="category">Python</a>
+  </span>
+  Tags:
+  <span itemprop="keywords">
+    <a href="/tag/typeerror.html" rel="tag">TypeError</a>
   </span>
 </div>
 <hr>
@@ -116,34 +153,20 @@
         <hr>
         <div class="dropdown">
           <!--カテゴリーごとにドロップダウン -->
-          <button class="btn dropdown-toggle border" type="button" id="others" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            others
-          </button>
-          <!--記事ごとに回し、もしカテゴリーが一致したら追加-->
-          <div class="dropdown-menu" aria-labelledby="others">
-            <a class="dropdown-item"
-              href="/category/others.html">others(1)</a>
-            <div class="dropdown-divider"></div>
-
-            <a class="dropdown-item" href="/others.html">others(1)</a>
-          </div>
-        </div>
-        <hr>
-        <div class="dropdown">
-          <!--カテゴリーごとにドロップダウン -->
-          <button class="btn dropdown-toggle border" type="button" id="Python" data-toggle="dropdown"
+          <button class="btn dropdown-toggle" type="button" id="Python" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Python
           </button>
           <!--記事ごとに回し、もしカテゴリーが一致したら追加-->
           <div class="dropdown-menu" aria-labelledby="Python">
             <a class="dropdown-item"
-              href="/category/python.html">Python(2)</a>
+              href="/category/python.html">Python(4)</a>
             <div class="dropdown-divider"></div>
 
-            <a class="dropdown-item" href="/ValueError.html">ValueError(1)</a>
-            <a class="dropdown-item" href="/ImportError.html">ImportError(1)</a>
+            <a class="dropdown-item" href="/TypeError.html">TypeError(1)</a>
+            <a class="dropdown-item" href="/SyntaxError.html">SyntaxError(1)</a>
+            <a class="dropdown-item" href="/NameError.html">NameError(1)</a>
+            <a class="dropdown-item" href="/ModuleNotFoundError.html">ModuleNotFoundError(1)</a>
           </div>
         </div>
 
@@ -160,8 +183,8 @@
             <div class="col-sm-6">
               <h4>サイト内リンク</h4>
               <ul class="list my-list-style">
-                <li><a href="/"><i class="fa fa-ホーム "></i> ホーム</a></li>
-                <li><a href="/Home.html"><i class="fa fa-このサイトについて "></i> このサイトについて</a></li>
+                <li><a href="/"><i class="fa fa-ホーム "></i>ホーム</a></li>
+                <li><a href="/Home.html"><i class="fa fa-このサイトについて "></i>このサイトについて</a></li>
             </div>
 
           </div>

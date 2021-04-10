@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>このサイトについて — PyErrorDict</title>
-  <meta name="description" content="Title: このサイトについて; Date: 2000-01-01; Author: nss">
+  <title>TypeError — PyErrorDict</title>
+  <meta name="description" content="Title: TypeError; Date: 2021-04-10; Author: nss">
   <meta name="author" content="nss">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript">
@@ -43,27 +43,57 @@
       <div class="col-sm-9">
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="text-center article-header">
-    <h1 itemprop="name headline" class="article-title">このサイトについて</h1>
+    <h1 itemprop="name headline" class="article-title">TypeError</h1>
   </div>
   <div class="text-left">
-    <time datetime="2000-01-01T00:00:00+09:00" itemprop="datePublished">Build:2000-01-01</time>
+    <time datetime="2021-04-10T00:00:00+09:00" itemprop="datePublished">Build:2021-04-10</time>
     /
-    <time datetime="2000-01-01T00:00:00+09:00" itemprop="dateModified">Modify:2000-01-01</time>
+    <time datetime="2021-04-10T00:00:00+09:00" itemprop="dateModified">Modify:2021-04-10</time>
   </div>
   <div align="right">
     Tags:
     <span itemprop="keywords">
       <a class="d-inline p-1 bg-secondary text-white rounded-pill border border-black"
-        href="/tag/others.html" rel="tag">
-        others</a>
+        href="/tag/typeerror.html" rel="tag">
+        TypeError</a>
     </span>
   </div>
   <div itemprop="articleBody" class="article-body">
     <span>
-      <h1 id="_1">このサイトについて</h1>
-<p>Pythonのエラーが出たけどいまいちわからない！といったときのための、主に初学者向けとしてエラーコード別対処法をまとめていきます。</p>
-<p>Pythonのエラーは構文エラー(SyntaxError)と例外(xxxError)などが存在します。</p>
-<p>厳密にはこのSyntaxErrorが正しく「エラー」であり、ほかのxxxErrorと呼ばれるものは予期しない処理を行った場合に出されるException（例外）です。Exceptionは独自に定義することも可能なため、様々なエラーが存在しています。</p>
+      <h1 id="typeerror">TypeError</h1>
+<p>Type(型)に関するエラーです。異なる型同士の演算を行おうとして失敗した場合や、処理の想定と違う型が渡された場合に発生します。</p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span> <span class="o">+</span> <span class="mi">10</span>
+
+<span class="o">================================</span>
+<span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">&quot;int&quot;</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span>
+</code></pre></div>
+
+<p>Pythonでは文字列（str型）と整数（int型）の積はエラーなく実行されます。</p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">================================</span>
+<span class="mi">10101010</span>
+</code></pre></div>
+
+<p>もちろん浮動小数点型（float型）や複素数型（complex型）との積はエラーが生じます。</p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;10&quot;</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="o">================================</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;10&quot;</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t multiply sequence by non-int of type &#39;</span><span class="nb">float</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="n">j</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;10&quot;</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="o">================================</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;10&quot;</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t multiply sequence by non-int of type &#39;</span><span class="nb">complex</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<p>また、NoneTypeに関するエラーはよく起こります。</p>
+<p>これは<code>'NoneType' object is not xxx</code></p>
+<p>というエラーメッセージになります。Noneが返される関数に対して期待されない処理を行っていることが原因として多いため、該当の変数や関数の型を確認しましょう。</p>
     </span>
   </div>
 </div>

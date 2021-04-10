@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ValueError — PyErrorDict</title>
-  <meta name="description" content="Title: ValueError; Date: 2021-04-06; Author: nss">
+  <title>NameError — PyErrorDict</title>
+  <meta name="description" content="Title: NameError; Date: 2021-04-10; Author: nss">
   <meta name="author" content="nss">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript">
@@ -26,46 +26,68 @@
   <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
   <link href="/theme/css/local.css" rel="stylesheet">
   <link href="/theme/css/pygments.css" rel="stylesheet">
+ 
 </head>
 
 <body>
   <div class="container">
-    <div class="page-header border-3">
-      <div class="row justify-content-start">
-        <div class="col-sm-8">
-          <h1><a href="/">PyErrorDict</a>
-            <small>Pythonのエラー集だよ</small>
-          </h1>
-        </div>
-      </div>
+    <div class="header border-2">
+        <h1>
+          <a href="/">PyErrorDict</a>
+          <small>鋭意追加中</small>
+        </h1>
+        <hr>
     </div>
 
     <div class="row ">
       <div class="col-sm-9">
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="text-center article-header">
-    <h1 itemprop="name headline" class="article-title">ValueError</h1>
+    <h1 itemprop="name headline" class="article-title">NameError</h1>
   </div>
   <div class="text-left">
-    <time datetime="2021-04-06T00:00:00+09:00" itemprop="datePublished">Build:2021-04-06</time>
+    <time datetime="2021-04-10T00:00:00+09:00" itemprop="datePublished">Build:2021-04-10</time>
     /
-    <time datetime="2021-04-06T00:00:00+09:00" itemprop="dateModified">Modify:2021-04-06</time>
+    <time datetime="2021-04-10T00:00:00+09:00" itemprop="dateModified">Modify:2021-04-10</time>
   </div>
   <div align="right">
     Tags:
     <span itemprop="keywords">
       <a class="d-inline p-1 bg-secondary text-white rounded-pill border border-black"
-        href="/tag/valueerror.html" rel="tag">
-        ValueError</a>
+        href="/tag/nameerror.html" rel="tag">
+        NameError</a>
     </span>
   </div>
-  <hr>
   <div itemprop="articleBody" class="article-body">
-    <span style="font-size: larger;">
-      <h1 id="valueerror">ValueError</h1>
+    <span>
+      <h1 id="nameerror">NameError</h1>
+<p>NameErrorは文字通りオブジェクトの名前に関するエラーです。未定義の変数や関数をしようとしたときに発生します。</p>
+<h2 id="nameerror-name-x-is-not-defined">NameError: name 'x' is not defined</h2>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>print<span class="o">(</span>x<span class="o">)</span>
+NameError: name <span class="s1">&#39;x&#39;</span> is not defined
+</code></pre></div>
+
+<p>単に未定義であった場合は原因がわかりやすいですが、既存の変数・関数のスペルミス、大文字小文字のミスでも同様に未定義として扱われる点は注意が必要です。</p>
+<div class="highlight"><pre><span></span><code><span class="n">point</span> <span class="o">=</span> <span class="mi">70</span>
+
+<span class="k">if</span> <span class="n">point</span> <span class="o">&gt;</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;合格&quot;</span>
+<span class="k">elif</span> <span class="n">point</span> <span class="o">&lt;</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;不合格&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>print<span class="o">(</span>result<span class="o">)</span>
+NameError: name <span class="s1">&#39;result&#39;</span> is not defined
+</code></pre></div>
+
+<p>当然ですが、このようにif文中などで定義していて、かつ実行時にその行を読まなかった場合もNameErrorが発生します。上記の例はわかりやすいものですが、複雑な分岐を繰り返した時などは、それぞれのオブジェクトがきちんと処理されているかを確認しましょう。</p>
     </span>
   </div>
-  <hr>
 </div>
       </div>
       <div class="col-sm-3">
@@ -75,34 +97,20 @@
         <hr>
         <div class="dropdown">
           <!--カテゴリーごとにドロップダウン -->
-          <button class="btn dropdown-toggle border" type="button" id="others" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            others
-          </button>
-          <!--記事ごとに回し、もしカテゴリーが一致したら追加-->
-          <div class="dropdown-menu" aria-labelledby="others">
-            <a class="dropdown-item"
-              href="/category/others.html">others(1)</a>
-            <div class="dropdown-divider"></div>
-
-            <a class="dropdown-item" href="/others.html">others(1)</a>
-          </div>
-        </div>
-        <hr>
-        <div class="dropdown">
-          <!--カテゴリーごとにドロップダウン -->
-          <button class="btn dropdown-toggle border" type="button" id="Python" data-toggle="dropdown"
+          <button class="btn dropdown-toggle" type="button" id="Python" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Python
           </button>
           <!--記事ごとに回し、もしカテゴリーが一致したら追加-->
           <div class="dropdown-menu" aria-labelledby="Python">
             <a class="dropdown-item"
-              href="/category/python.html">Python(2)</a>
+              href="/category/python.html">Python(4)</a>
             <div class="dropdown-divider"></div>
 
-            <a class="dropdown-item" href="/ValueError.html">ValueError(1)</a>
-            <a class="dropdown-item" href="/ImportError.html">ImportError(1)</a>
+            <a class="dropdown-item" href="/TypeError.html">TypeError(1)</a>
+            <a class="dropdown-item" href="/SyntaxError.html">SyntaxError(1)</a>
+            <a class="dropdown-item" href="/NameError.html">NameError(1)</a>
+            <a class="dropdown-item" href="/ModuleNotFoundError.html">ModuleNotFoundError(1)</a>
           </div>
         </div>
 
@@ -119,8 +127,8 @@
             <div class="col-sm-6">
               <h4>サイト内リンク</h4>
               <ul class="list my-list-style">
-                <li><a href="/"><i class="fa fa-ホーム "></i> ホーム</a></li>
-                <li><a href="/Home.html"><i class="fa fa-このサイトについて "></i> このサイトについて</a></li>
+                <li><a href="/"><i class="fa fa-ホーム "></i>ホーム</a></li>
+                <li><a href="/Home.html"><i class="fa fa-このサイトについて "></i>このサイトについて</a></li>
             </div>
 
           </div>
